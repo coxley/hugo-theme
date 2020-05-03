@@ -10,13 +10,18 @@ html {
      --primary-accent: #3581B8;
      --secondary-accent: #984447;
 }
+
+/** page layout **/
+body {
+     background-color: var(--main-bg-color);
+}
+
+
+
 *, *:before, *:after {
      box-sizing: inherit;
 }
-body {
-     margin: 0;
-     background-color: var(--main-bg-color);
-}
+
 a {
      background-color: transparent;
 }
@@ -50,6 +55,15 @@ body {
      line-height: 1.85;
      letter-spacing: 0.01rem;
 }
+
+.hanchor {
+     font-size: 75%;
+     visibility: hidden;
+     color: var(--primary-accent);
+ }
+h1:hover a {
+     visibility: visible
+}
 h1, h2, h3, h4, h5, h6 {
      font-weight: 700;
      line-height: 1.25;
@@ -75,6 +89,9 @@ p, dl, ol, ul {
 a {
      color: var(--primary-accent);
      text-decoration: none;
+}
+a:focus {
+     color: var(--secondary-accent);
 }
 a:hover, a:focus {
      text-decoration: underline;
@@ -300,4 +317,3 @@ button:active, .btn:active {
 .post-tags a {
      color: #ccc;
 }
-
