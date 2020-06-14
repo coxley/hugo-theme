@@ -127,9 +127,7 @@ hr {
 .header {
     display: flex
     flex-flow: row nowrap;
-    justify-content: flex-start;
-    position: relative;
-    margin: 3rem auto;
+    justify-content: space-between;
 }
 .site-title {
     font-size: 2rem;
@@ -147,11 +145,12 @@ hr {
 
 .nav {
     position: sticky;
-    top: 2rem;
+    top: 5rem;
     align-self: start;
     margin-top: 2rem;
-    padding-right: 1rem;
-    border-right: 1px solid #efefef;
+    padding-left: 1rem;
+    padding-right: 0.5rem;
+    border-left: 1px solid #efefef;
 
 }
 
@@ -185,7 +184,7 @@ hr {
 
 @media all and (max-width: 800px) {
   .nav { display: none; }
-  .right-buffer { display: none; }
+  .left-buffer { display: none; }
 }
 
 .post {
@@ -194,7 +193,7 @@ hr {
     max-width: 42em;
 }
 
-.right-buffer {
+.left-buffer {
     margin: auto;
     width: auto;
 }
