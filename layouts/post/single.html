@@ -16,15 +16,6 @@
       <article class="post-content">
         {{ .Content }}
       </article>
-
-      <div class="pagination">
-        {{ if .Prev }}
-        <a class="btn previous" href="{{.Prev.Permalink}}">Prev</a>
-        {{ end }}
-        {{ if .Next }}
-        <a class="btn next" href="{{.Next.Permalink}}">Next</a>
-        {{ end }}
-      </div>
       {{ partial "footer.html" . }}
     </div>
     <aside class="nav">

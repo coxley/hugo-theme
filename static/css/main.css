@@ -128,6 +128,7 @@ hr {
     display: flex
     flex-flow: row nowrap;
     justify-content: space-between;
+    margin: 2rem auto;
 }
 .site-title {
     font-size: 2rem;
